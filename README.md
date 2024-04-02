@@ -323,18 +323,6 @@ python caption/train.py --workers 8 --device 0 --batch 32  --data coco.yaml --im
 </details>
 
 
-
-## Scripts
-The repository includes several Python scripts for analyzing the data. These scripts use the matplotlib and NumPy libraries for data manipulation and visualization. The scripts include:
-
-main.py -   Main script for reading the csv data, plotting and calculating the rainflow cycles.
-
-## Usage
-To use this repository, clone it to your local machine using Git. Use the local VENV-environment to compile the python file.
-
-main.py: 
-    - Initialize the plotter class "drivecycle_data_plotter(...)" using the file path of the drive cycle data csv as  parameter.
-    - Call the needed plotting methodes to plot the data as needed.
     
 ## VENV usage
 To install the required Environment use following commands **after navigating to your local git repository** in CMD:
@@ -350,12 +338,9 @@ Step 2: Activating it
 ```
 The Environment should now be activated and CMD should look like 
 ```
-(.env) YOUR_REPOSITORY_PATH\soh_drivecycledataanalysis>
+(.env) YOUR_REPOSITORY_PATH\yolov9>
 ```
 Step 3: Now you can install the nessecary packages specified in "requirements.txt" with
 ```
 pip install -r requirements.txt
 ``` 
-
-### Author
-This repository was created by Bernhard Pandion. If you have any questions or comments, please feel free to contact me at bernhard.pandion@magna.com.
