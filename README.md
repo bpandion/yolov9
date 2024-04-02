@@ -324,9 +324,9 @@ python caption/train.py --workers 8 --device 0 --batch 32  --data coco.yaml --im
 
 
     
-## VENV usage
-To install the required Environment use following commands **after navigating to your local git repository** in CMD:
-
+# VENV usage
+To install the required packages into an environment use following commands **after navigating to your local git repository** in CMD:
+Before the installation of the packages, [Python](https://www.python.org/downloads/) and [MS Visual C++ build tools(>= V14.0)](https://visualstudio.microsoft.com/de/downloads/?q=build+tools) have to be installed.
 
 Step 1: Creating a VENV environment in the directory
 ```
@@ -344,3 +344,5 @@ Step 3: Now you can install the nessecary packages specified in "requirements.tx
 ```
 pip install -r requirements.txt
 ``` 
+
+VSCode should now automatically detect the environment and suggest using it as the python interpreter.
