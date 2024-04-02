@@ -1,1 +1,7 @@
 .env
+gelan-c.pt
+gelan-e.pt
+yolov9-c-converted.pt
+yolov9-c.pt
+yolov9-e-converted.pt
+yolov9-e.pt
