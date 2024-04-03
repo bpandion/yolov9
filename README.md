@@ -339,6 +339,8 @@ python caption/train.py --workers 8 --device 0 --batch 32  --data coco.yaml --im
 1. Setup the rest of the environment
 1. Check if Torch&Cuda detect your GPU correctly with TorchTest.py
 1. (Optional) run scripts/get_coco.sh to download the COCO dataset before validation (~20gb!)
+1. (Optional) Download Yolo-models linked in [Evaluation](#evaluation), run validation as mentioned and compare results 
+1. (Optional) Detection can be done by using the image folder path instead of './data/images/horses.jpg' in [Inference](#inference) 
 
     
 ## VENV usage
