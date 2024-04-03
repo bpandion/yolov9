@@ -322,9 +322,26 @@ python caption/train.py --workers 8 --device 0 --batch 32  --data coco.yaml --im
 
 </details>
 
+# Setup
+1. Make sure that GPU is [cuda capable](https://developer.nvidia.com/cuda-gpus)
+1. Install [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+1. (Optional? idk) Install [CUDNN Library](https://developer.nvidia.com/cudnn-downloads)
+1. To be sure restart pc
+1. Create an environment in your local repository (see VENV usage) but do not yet install all requirements
+1. Install [Pytorch locally](https://pytorch.org/get-started/locally/) by running 
+    ```
+        pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    ```
+    If allready installed use  
+    ```
+        pip3 install --upgrade --force-reinstall torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    ```
+1. Setup the rest of the environment
+1. Check if Torch&Cuda detect your GPU correctly with TorchTest.py
+1. (Optional) run scripts/get_coco.sh to download the COCO dataset before validation (~20gb!)
 
     
-# VENV usage
+## VENV usage
 To install the required packages into an environment use following commands **after navigating to your local git repository** in CMD:
 Before the installation of the packages, [Python](https://www.python.org/downloads/) and [MS Visual C++ build tools(>= V14.0)](https://visualstudio.microsoft.com/de/downloads/?q=build+tools) have to be installed.
 
