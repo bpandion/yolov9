@@ -1,0 +1,1 @@
+python detect_dual.py --source 'D:\Schule\TU\RobotVision_Project\RobotVision\datasets\KitchenCOCO\valid\images' --img 640 --device 0 --weights './yolov9-c.pt' --name yolov9_c_kitchencoco --save-txt --save-conf --save-crop
