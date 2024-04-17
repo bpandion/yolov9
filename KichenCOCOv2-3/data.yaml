@@ -1,0 +1,23 @@
+names:
+- apple
+- banana
+- bottle
+- bowl
+- clock
+- cup
+- knife
+- microwave
+- refrigerator
+- sink
+- spoon
+- toaster
+nc: 12
+roboflow:
+  license: CC BY 4.0
+  project: kichencocov2
+  url: https://universe.roboflow.com/lvarobotvision/kichencocov2/dataset/3
+  version: 3
+  workspace: lvarobotvision
+test: ../test/images
+train: KichenCOCOv2-3/train/images
+val: KichenCOCOv2-3/valid/images
