@@ -341,7 +341,7 @@ def parse_opt():
     parser.add_argument('--save-json', action='store_true', help='save a COCO-JSON results file')
     parser.add_argument('--project', default=ROOT / 'runs/val', help='save to project/name')
     # parser.add_argument('--name', default='exp', help='save to project/name')
-    parser.add_argument('--name', default='yolov9_c_kitchen_new', help='save to project/name')
+    parser.add_argument('--name', default='yolov9_c_kitchen_test', help='save to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
     parser.add_argument('--half', action='store_true', help='use FP16 half-precision inference')
     parser.add_argument('--dnn', action='store_true', help='use OpenCV DNN for ONNX inference')
