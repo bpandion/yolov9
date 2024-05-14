@@ -27,6 +27,7 @@ txts = os.listdir(old_label_path)
 filecounter=1
 with open('data/coco.yaml','r') as file:
     coco_yaml_data = yaml.safe_load(file)
+
     
 with open('KitchenCOCOv2-5/data.yaml','r') as file:
     kitchencoco_yaml_data = yaml.safe_load(file)
@@ -48,19 +49,18 @@ for txt in txts:
                     line[0] = str(ci)
                     break
             
-        # txt wieder zusammensetzen
-        
-        full_string = ''
-        for s in split_content:
-            full_string = full_string + ' '.join(s)
-        
-        # write editierte txt 
-        # with open(path+'\\edited\\'+txt, "w") as file:
-        with open(new_label_path+'\\'+txt, "w") as file:
-            file.write(full_string)
-            file.close()
-        print(str(filecounter) + " File edited, Filename: " + new_label_path+'\\'+txt)
-        filecounter = filecounter+1
+    # txt wieder zusammensetzen
+    
+    full_string = ''
+    for s in split_content:
+        full_string = full_string + ' '.join(s)
+    
+    # write editierte txt 
+    # with open(path+'\\edited\\'+txt, "w") as file:
+    with open(new_label_path+'\\'+txt, "w") as file:
+        file.write(full_string)
+    print(str(filecounter) + " File edited, Filename: " + new_label_path+'\\'+txt)
+    filecounter = filecounter+1
         
 # editing yaml        
 with open('KitchenCOCOv2-5/data.yaml','w') as file:
