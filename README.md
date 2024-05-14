@@ -369,7 +369,7 @@ VSCode should now automatically detect the environment and suggest using it as t
 
 ## LVIS installation
 
-get lvis.yaml [https://docs.ultralytics.com/de/datasets/detect/lvis/#applications](https://docs.ultralytics.com/de/datasets/detect/lvis/#applications)
+optional?: get lvis.yaml [https://docs.ultralytics.com/de/datasets/detect/lvis/#applications](https://docs.ultralytics.com/de/datasets/detect/lvis/#applications)
 
 run 
 
@@ -382,7 +382,7 @@ from ultralytics.utils.downloads import download
 from pathlib import Path
 
 # Download labels
-dir = Path(yaml['path'])  # dataset root dir
+dir = Path('.\LVIS')  # dataset root dir
 
 ```
 check path, afterwards
