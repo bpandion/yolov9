@@ -164,6 +164,11 @@ python train_dual.py --workers 8 --device 0 --batch 16 --data data/coco.yaml --i
 # train gelan models
 # python train.py --workers 8 --device 0 --batch 32 --data data/coco.yaml --img 640 --cfg models/detect/gelan-c.yaml --weights '' --name gelan-c --hyp hyp.scratch-high.yaml --min-items 0 --epochs 500 --close-mosaic 15
 ```
+Single GPU training on LVIS dataset with reduced bachsize for RTX 2080ti
+```
+python train_dual.py --workers 8 --device 0 --batch 6 --data ./lvis/lvis.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights '' --name yolov9_trainedOn_lvis --hyp hyp.scratch-high.yaml --min-items 0 --epochs 500 --close-mosaic 15
+```
+
 
 Multiple GPU training
 
